@@ -1,16 +1,44 @@
-# React + Vite
+# Progress Bar
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A dynamic progress bar component with increment/decrement controls and color changes based on progress level.
 
-Currently, two official plugins are available:
+## Features
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+- ✅ Visual progress bar with percentage display
+- ✅ Increment by 10% button
+- ✅ Decrement by 10% button
+- ✅ Color coding: Red (0-40%), Orange (40-80%), Green (80-100%)
+- ✅ Value constraints (0-100%)
+- ✅ Real-time updates
 
-## React Compiler
+## How to Use
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+1. Click **+10%** to increase progress by 10%
+2. Click **-10%** to decrease progress by 10%
+3. The progress bar displays the current percentage
+4. Colors change based on progress level
 
-## Expanding the ESLint configuration
+## Color Scheme
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+- 🔴 **Red** - 0-40% progress
+- 🟠 **Orange** - 40-80% progress
+- 🟢 **Green** - 80-100% progress
+
+## Technologies Used
+
+- React (useState hook)
+- Vite
+- Inline CSS styling
+
+## Installation & Running
+
+```bash
+npm install
+npm run dev
+```
+
+The application will start at `http://localhost:5173` (or the next available port).
+
+## Component Structure
+
+- `ProgressBar.jsx` - Main component with progress management and color logic

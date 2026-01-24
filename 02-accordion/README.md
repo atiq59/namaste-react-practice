@@ -1,16 +1,46 @@
-# React + Vite
+# Accordion
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+An accordion component that displays collapsible content sections with smooth expand/collapse animations.
 
-Currently, two official plugins are available:
+## Features
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+- ✅ Expandable/collapsible sections
+- ✅ Chevron icons indicating open/closed state
+- ✅ Only one section open at a time
+- ✅ Smooth transitions
+- ✅ Dynamic content rendering
 
-## React Compiler
+## How to Use
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+1. Click on an accordion item title to expand it
+2. Click again to collapse it
+3. The chevron icon rotates to indicate the state
 
-## Expanding the ESLint configuration
+## Technologies Used
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+- React (useState hook)
+- React Icons (FaChevronDown, FaChevronUp)
+- Vite
+- CSS
+
+## Installation & Running
+
+```bash
+npm install
+npm run dev
+```
+
+The application will start at `http://localhost:5173` (or the next available port).
+
+## Component Structure
+
+- `Accordion.jsx` - Main accordion component accepting items array with title and content
+
+## Props
+
+```javascript
+<Accordion items={[
+  { title: "Section 1", content: "Content here" },
+  { title: "Section 2", content: "More content" }
+]} />
+```

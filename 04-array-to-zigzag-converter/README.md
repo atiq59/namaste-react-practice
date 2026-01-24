@@ -1,16 +1,42 @@
-# React + Vite
+# Array to Zigzag Converter
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Converts comma-separated strings into a zigzag pattern by reversing alternating strings.
 
-Currently, two official plugins are available:
+## Features
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+- ✅ Input comma-separated strings
+- ✅ Reverse alternating strings in zigzag pattern
+- ✅ Display output result
+- ✅ Input validation
 
-## React Compiler
+## How to Use
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+1. Enter comma-separated strings in the input field (e.g., "one,two,three")
+2. Click the Submit button
+3. The output will show the zigzag converted result
+4. Example: "one,two,three" → "oneowt,threee" (reverses every second string)
 
-## Expanding the ESLint configuration
+## Technologies Used
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+- React (useState hook)
+- Vite
+- CSS
+
+## Installation & Running
+
+```bash
+npm install
+npm run dev
+```
+
+The application will start at `http://localhost:5173` (or the next available port).
+
+## Component Structure
+
+- `ZigZagString.jsx` - Main component with zigzag conversion logic
+
+## Algorithm
+
+- Takes comma-separated input strings
+- Reverses every second string
+- Joins them back together

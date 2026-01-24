@@ -1,16 +1,42 @@
-# React + Vite
+# Leap Year Checker
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A utility that determines whether a given year is a leap year based on the Gregorian calendar rules.
 
-Currently, two official plugins are available:
+## Features
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+- ✅ Year input validation
+- ✅ Leap year calculation
+- ✅ Error handling for empty or invalid input
+- ✅ Clear result and error messages
+- ✅ Clean UI
 
-## React Compiler
+## How to Use
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+1. Enter a year in the input field
+2. Click the "Check" button
+3. View the result indicating if the year is a leap year or not
 
-## Expanding the ESLint configuration
+## Leap Year Rules
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+A year is a leap year if:
+- It's divisible by 4 **AND** not divisible by 100, **OR**
+- It's divisible by 400
+
+## Technologies Used
+
+- React (useState hook)
+- Vite
+- CSS
+
+## Installation & Running
+
+```bash
+npm install
+npm run dev
+```
+
+The application will start at `http://localhost:5173` (or the next available port).
+
+## Component Structure
+
+- `LeapYear.jsx` - Main component with leap year validation logic
