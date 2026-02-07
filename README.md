@@ -40,6 +40,12 @@ A React authentication system demonstrating login/logout functionality using Con
 ### 12-mortgage-calculator
 A mortgage payment calculator that computes monthly payments based on loan amount, interest rate, and loan term.
 
+### 13-contact-form
+A contact form component with form validation, error handling, and submission feedback.
+
+### 14-color-explorer
+A color lookup application that searches for colors by name and displays their hex code with visual preview.
+
 ## Tech Stack
 
 - **React** - UI library
@@ -74,5 +80,7 @@ namaste-react-practice/
 ├── 09-leap-year/
 ├── 10-copy-text/
 ├── 11-authentication/
-└── 12-mortgage-calculator/
+├── 12-mortgage-calculator/
+├── 13-contact-form/
+└── 14-color-explorer/
 ```
