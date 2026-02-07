@@ -37,6 +37,9 @@ Copy to clipboard utility that copies user-entered text with success/error feedb
 ### 11-authentication
 A React authentication system demonstrating login/logout functionality using Context API for global state management.
 
+### 12-mortgage-calculator
+A mortgage payment calculator that computes monthly payments based on loan amount, interest rate, and loan term.
+
 ## Tech Stack
 
 - **React** - UI library
@@ -68,8 +71,8 @@ namaste-react-practice/
 ├── 06-chips-input/
 ├── 07-tab-switcher/
 ├── 08-progress-bar/
+├── 09-leap-year/
 ├── 10-copy-text/
-└── 11-authentication/
-└── 10-copy-text/
-└── 10-authentication/
+├── 11-authentication/
+└── 12-mortgage-calculator/
 ```
